@@ -3,18 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Cake thing</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
     <h1>Recipe</h1>
-    <table class="table table-bordered" style="width:50%">
-      <thead>
-        <th>Name</th>
-        <th>Quantity</th>
-      </thead>
-    </table>
-    <script src="app.js" charset="utf-8">
+    <div class="row">
+      <div class="col-sm-9">
+        <table id="ingredient-table" class="table table-bordered" style="width:50%">
+          <thead>
+            <th>Name</th>
+            <th>Quantity</th>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-primary border">
+          <div class="panel-heading">
+            Ingredient Info
+          </div>
+          <div class="panel-body">
+            <label for="ingredientname">
+              Ingredient Name
+            </label>
+            <input type="text"
+                   class="form-control"
+                   value="Ing1"
+                   id="ingredientname" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </script>
+    <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
